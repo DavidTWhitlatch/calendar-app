@@ -1,0 +1,17 @@
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.calendar-header__arrows {
+  display: flex;
+}
+
+.calendar-header__arrow-icon {
+  font-size: 32px;
+  color: #747474;
+  cursor: pointer;
+  padding: 0 10px;
+}

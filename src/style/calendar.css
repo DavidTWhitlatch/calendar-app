@@ -1,0 +1,78 @@
+.calendar {
+  margin-top: 10px;
+  box-shadow: 0px 4px 16px #a1a6ac3e;
+  border-radius: 12px;
+  padding: 12px 20px;
+  width: 335px;
+  background-color: white;
+}
+
+.weekHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #747474;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #747474;
+  row-gap: 5px;
+}
+
+.date {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.date:hover {
+  border: 1px solid #e2e2e2;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.otherMonths {
+  color: #e2e2e2;
+  pointer-events: none;
+}
+
+.selectedDate {
+  background-color: #52adc7;
+  border: 1px solid #52adc7;
+  color: white;
+}
+
+.selectedDate:hover {
+  background-color: #52adc7;
+  border: 1px solid #52adc7;
+}
+
+.taskIndicator {
+  position: absolute;
+  bottom: 1px;
+  height: 4px;
+  width: 4px;
+  background-color: #52adc7;
+  border-radius: 50%;
+}
+
+.selectedIndicator {
+  background-color: white;
+}
